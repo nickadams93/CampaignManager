@@ -15,10 +15,11 @@ public class PlayerCharacter {
     @Id
     private long id;
     @ManyToOne
-    private User player;
+    private Campaign campaign;
     private String name;
     private int level;
     private int experience;
     private String race;
     private String vocation;
+    private String notes;
 }

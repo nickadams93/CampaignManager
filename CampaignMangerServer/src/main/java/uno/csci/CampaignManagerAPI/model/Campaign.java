@@ -17,9 +17,9 @@ public class Campaign {
     private long id;
     private String name;
     private String description;
-    @ManyToMany
-    private List<User> players;
+    private String createdBy;
+    @OneToMany
+    private List<PlayerCharacter> players;
     @ManyToOne
     private User dm;
-
 }
